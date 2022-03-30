@@ -15,10 +15,10 @@ public class Train {
         if (tTime.before(getDate("9:30 Am")))
             return "Ticket is Full";
 
-        else if (tTime.after(getDate("9:29 Am")) && tTime.before(getDate("4:01 Pm")))
+        else if (tTime.before(getDate("4:01 Pm")))
             return "Ticket is Sever";
 
-        else if (tTime.after(getDate("4:00 Pm")) && tTime.before(getDate("7:31 Pm")))
+        else if (tTime.before(getDate("7:31 Pm")))
             return "Ticket is Full";
 
             // then Time after "7:30 Pm"

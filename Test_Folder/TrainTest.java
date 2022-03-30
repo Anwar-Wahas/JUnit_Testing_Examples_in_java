@@ -79,6 +79,7 @@ public class TrainTest {
         String result = train.getTicketType("10:20 Pm");
         assertEquals("Ticket is Sever", result);
     }
+    //////////////////////////////////////////////////////////
 
     @Test
     public void invalid_Date_Format() throws ParseException {
