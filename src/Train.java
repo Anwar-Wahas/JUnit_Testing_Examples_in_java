@@ -9,27 +9,30 @@ import java.util.Locale;
 public class Train {
 
     private SimpleDateFormat sdf = new SimpleDateFormat("h:mm a", Locale.US);
+    final String full = "Ticket is Full";
+    final String sever = "Ticket is Sever";
 
     String getTicketType(String time1) {
         Date tTime = getDate(time1);
         if (tTime.before(getDate("9:30 Am")))
-            return "Ticket is Full";
+            return full;
 
         else if (tTime.before(getDate("4:01 Pm")))
-            return "Ticket is Sever";
+            return sever;
 
         else if (tTime.before(getDate("7:31 Pm")))
-            return "Ticket is Full";
+            return full;
 
             // then Time after "7:30 Pm"
-        else return "Ticket is Sever";
+        else return sever;
     }
 
     private Date getDate(String time) {
         try {
             return sdf.parse(time);
         } catch (ParseException e) {
-            System.out.println( "Parse Exception: Unparseable date");
-        }return new Date();
+            System.out.println("Parse Exception: Unparseable date");
+        }
+        return new Date();
     }
 }
