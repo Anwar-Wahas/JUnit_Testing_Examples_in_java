@@ -1,0 +1,23 @@
+
+<suite name="group">
+    <groups>
+        <run>
+            <include name="group1"/>
+        </run>
+    </groups>
+    <test name="classA">
+        <classes>
+            <class name="testNGExample.classATest"> </class>
+        </classes>
+    </test>
+    <test name="classB">
+        <classes>
+            <class name="testNGExample.classBTest"> </class>
+        </classes>
+    </test>
+    <test name="classC">
+        <classes>
+            <class name="testNGExample.classBTest"> </class>
+        </classes>
+    </test>
+</suite>

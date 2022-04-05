@@ -3,11 +3,8 @@ import org.junit.Test;
 
 import java.text.ParseException;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
-/**
- * Created by Dell on 03/29/2022.
- */
 public class TrainTest {
 
     private Train train;
@@ -85,4 +82,6 @@ public class TrainTest {
     public void invalid_Date_Format() throws ParseException {
         train.getTicketType("19:45");
     }
+
+
 }

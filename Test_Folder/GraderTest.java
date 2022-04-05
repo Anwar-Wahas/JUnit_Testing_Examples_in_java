@@ -6,8 +6,9 @@ import static org.junit.Assert.*;
 /**
  * Created by Dell on 03/30/2022.
  */
+
 public class GraderTest {
-    Grader grader;
+   private Grader grader;
 
     @Before
     public void setUp() throws Exception {
